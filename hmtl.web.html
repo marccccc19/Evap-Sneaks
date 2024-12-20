@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample only...</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .message-box {
+            display: none;
+            background-color: #ffcc00;
+            color: #333;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Evap Sneaks</h1>
+    </div>
+    <div class="content">
+        <h2>This one is a sample navigator only. Go back to the main page.</h2>
+        <p>Nothing to see here.</p>
+
+        <!-- Button to trigger the redirect -->
+        <button onclick="redirectToHome()">Home</button>
+
+        <!-- Message box that will be displayed -->
+        <div id="messageBox" class="message-box">
+            <p>Redirecting to the main page...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Evap's Sneaks. All rights reserved.</p>
+    </div>
+
+    <script>
+        // Function to show the message and redirect to the home page
+        function redirectToHome() {
+            var messageBox = document.getElementById('messageBox');
+            messageBox.style.display = 'block'; // Show the message box
+            
+            // Redirect to the main page after 3 seconds
+            setTimeout(function() {
+                window.location.href = "file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html" ; // Update 'index.html' to the actual URL of your main page
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

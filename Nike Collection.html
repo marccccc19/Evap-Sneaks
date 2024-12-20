@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bababa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content area */
+        .main-content {
+            margin-left: 0px;
+            width: calc(100% - 0px);
+            padding: 0px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2e2e2e;
+            color: #f0e8d2;
+            padding: 20px;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 60px; /* Adjust logo size */
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header .nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        header .nav li {
+            margin: 0 20px;
+        }
+
+        header .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        header .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .shoe-card {
+            background-color: #e2e2e2;
+            border: 1px solid #bababa;
+            border-radius: 10px;
+            width: 250px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shoe-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .shoe-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .shoe-info {
+            padding: 15px;
+        }
+
+        .shoe-info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .shoe-info p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #bababa;
+            margin-top: 10px;
+        }
+
+        .buy-button {
+            background-color: #2e2e2e;
+            color: #bababa;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #2e2e2e;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html">
+                <img src="C:\Users\Marc\OneDrive\Pictures\EVAPSs.png" alt="Logo">
+            </a>
+            <h1></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html">Home</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/About%20Us.html">About</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/Partners.html">Partners</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\Downloads\387544749_362184562808929_275501937490849869_n.png" alt="Nike Court Vision Low Next Nature">
+            <div class="shoe-info">
+                <h3>Nike Court Vision Low Next Nature </h3>
+                <p>Combines a retro basketball-inspired design with sustainable materials for a stylish and eco-friendly sneaker.</p>
+                <p class="price">Php 1,795.00</p>
+                <p>(2,895.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\Downloads\387417646_1506474326839040_763612575487090907_n (1).png" alt="Nike SB Chron 2 Canvas">
+            <div class="shoe-info">
+                <h3>Nike SB Chron 2 Canvas</h3>
+                <p>A durable skateboarding shoe featuring a sleek canvas upper, designed for comfort and support during intense skate sessions.</p>
+                <p class="price">Php 1,995.00</p>
+                <p>(2,895.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\Downloads\395543056_1123481588812463_1870507846216172880_n.png" alt="Nike Blazer Mid '77 Vintage">
+            <div class="shoe-info">
+                <h3>Nike Blazer Mid '77 Vintage</h3>
+                <p>A classic basketball-inspired sneaker with a retro design, featuring a leather upper, suede overlays, and a timeless high-top silhouette.</p>
+                <p class="price">Php 2,695.00</p>
+                <p>(4,995.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\Downloads\384541916_722794283198922_2517125459782567551_n.png" alt="Nike Revolution 7">
+            <div class="shoe-info">
+                <h3>Nike Revolution 7</h3>
+                <p>A lightweight running shoe designed for comfort and support, featuring a breathable mesh upper, soft foam cushioning, and a durable rubber outsole for optimal traction.</p>
+                <p class="price">Php 1,595.00</p>
+                <p>(2,895.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vans Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bababa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content area */
+        .main-content {
+            margin-left: 0px;
+            width: calc(100% - 0px);
+            padding: 0px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2e2e2e;
+            color: #f0e8d2;
+            padding: 20px;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 60px; /* Adjust logo size */
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header .nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        header .nav li {
+            margin: 0 20px;
+        }
+
+        header .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        header .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .shoe-card {
+            background-color: #e2e2e2;
+            border: 1px solid #bababa;
+            border-radius: 10px;
+            width: 250px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shoe-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .shoe-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .shoe-info {
+            padding: 15px;
+        }
+
+        .shoe-info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .shoe-info p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #bababa;
+            margin-top: 10px;
+        }
+
+        .buy-button {
+            background-color: #2e2e2e;
+            color: #bababa;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #2e2e2e;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html">
+                <img src="C:\Users\Marc\OneDrive\Pictures\EVAPSs.png" alt="Logo">
+            </a>
+            <h1></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html">Home</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/Partners.html">Partners</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/About%20Us.html">About</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 201802.png" alt="Skate Slip On">
+            <div class="shoe-info">
+                <h3>Skate Slip On</h3>
+                <p>Built Extra Tough on the Inside for Skateboarding</p>
+                <p class="price">Php 1,500.00</p>
+                <p>(3,545.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 202404.png" alt="BMX Sk8-Hi">
+            <div class="shoe-info">
+                <h3>BMX Sk8-Hi</h3>
+                <p>The BMX Sk8-Hi has been formulated for modern riding.</p>
+                <p class="price">Php 2,600.00</p>
+                <p>(5,317.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 202900.png" alt="Skate Old Skool">
+            <div class="shoe-info">
+                <h3>Skate Old Skool</h3>
+                <p>Built Extra Tough on the Inside for Skateboarding.</p>
+                <p class="price">Php 2,250.00</p>
+                <p>(4,431.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="shoe-card">
+            <img src="C:\Users\Marc\OneDrive\Pictures\Screenshots\Screenshot 2024-12-19 203305.png" alt="MTE UltraRange EXO">
+            <div class="shoe-info">
+                <h3>MTE UltraRange EXO</h3>
+                <p>Keep you on your toes and ready for the unexpected.</p>
+                <p class="price">Php 3,100.00</p>
+                <p>(6,201.00 SRP)</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

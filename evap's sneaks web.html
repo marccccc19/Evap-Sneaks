@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evap Sneaks</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bababa;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2e2e2e;
+            color: #f0e8d2;
+            padding: 10px 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .logo h1 {
+            font-size: 18px;
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            margin: 0 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #bababa;
+            padding: 50px 20px;
+        }
+
+        .hero-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .nav-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background-color: #555;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin: 0;
+            color: #000000;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #000000;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #2e2e2e;
+            background-color: #f0e8d2;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #555;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .product-card button {
+            padding: 8px 15px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p, .section ul {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .justify {
+            text-align: justify;
+            margin: 3em;
+        }
+
+        .developers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .developer-card {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .developer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .developer-card h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .developer-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/evap's%20sneaks%20web.html">
+                <img src="C:\Users\Marc\OneDrive\Pictures\EVAPSs.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav">
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#summer">Collection</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/About%20Us.html">About</a></li>
+            <li><a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/Partners.html">Partners</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <div class="hero-navigation">
+            <button class="nav-btn left">&lt;</button>
+            <div class="hero-content">
+                <img src="C:\Users\Marc\Downloads\Untitled402_20241208172519.png" alt="Shoes on Display">
+                <h2>Nike Blazer Mid '77 Vintage</h2>
+                <p>Php 4,995.00</p>
+                <button id="getOutBtn">Buy Item</button>
+                <div id="loadingMessage" class="loading"></div>
+            </div>
+            <button class="nav-btn right">&gt;</button>
+        </div>
+    </section>
+
+    <section class="section" id="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="C:\Users\Marc\Downloads\384541916_722794283198922_2517125459782567551_n.png" alt="Nike Court Vision Low Next Nature">
+                <h3>Nike Court Vision Low Next Nature</h3>
+                <p>Php 1,795.00</p>
+                <p>(2,895.00 SRP)</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Marc\Downloads\367358220_307591348700350_7554263734656293791_n.png" alt="Nike Revolution 7">
+                <h3>Nike Revolution 7</h3>
+                <p>Php 2,695.00</p>
+                <p>(4,995.00 SRP)</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Marc\Downloads\363668360_851671229830463_3769637579372690190_n.png" alt="Nike Blazer Low '77 Jumbo">
+                <h3>Nike Blazer Low '77 Jumbo</h3>
+                <p>Php 2,395.00</p>
+                <p>(5,095.00 SRP)</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+<section class="section" id="summer">
+    <h2>Collections</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="C:\Users\Marc\Downloads\pexels-mohaned-tamzini-686673207-28144050.jpg" alt="Vans Shoes">
+            <h3>Vans Shoes</h3>
+            <p>Vans shoes are iconic for their timeless style, comfort, and durability, originally designed for skateboarders but loved by people of all lifestyles. With their signature waffle soles and versatile designs, Vans blend functionality and fashion, making them a go-to choice for casual wear.</p>
+            <a href="file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/Vans%20Collection.html" target="_blank">
+                <button>Browse</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\Marc\Downloads\pexels-cristiano-de-luca-137932148-10963373.jpg" alt="Nike Shoes">
+            <h3>Nike Shoes</h3>
+            <p>Nike shoes are renowned for their innovative designs, cutting-edge technology, and exceptional performance, catering to athletes and casual wearers alike. With features like lightweight materials, responsive cushioning, and sleek styles, Nike delivers both comfort and style for any activity.</p>
+            <a href=file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/Nike%20Collection.html target="_blank">
+                <button>Browse</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        document.getElementById('getOutBtn').addEventListener('click', function() {
+            document.getElementById('loadingMessage').style.display = 'block';
+
+            setTimeout(function() {
+                window.location.href = 'file:///C:/Users/Marc/OneDrive/Desktop/ACTS/CS%20ELECT%20101/hmtl.web.html';
+            }, 1000);
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 Evap Sneaks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
